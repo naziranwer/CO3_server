@@ -1,0 +1,31 @@
+{
+  "name": "server_side",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "serve": "node dist/index.js",
+    "dev": "nodemon --watch 'src/**/*' --exec ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@graphql-tools/schema": "^10.0.6",
+    "@supabase/supabase-js": "^2.45.3",
+    "@telegraf/types": "^7.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "graphql": "^16.9.0",
+    "graphql-tag": "^2.12.6",
+    "graphql-yoga": "^5.7.0",
+    "http": "^0.0.1-security",
+    "nodemon": "^3.1.4",
+    "telegraf": "^4.16.3",
+    "type-graphql": "^2.0.0-rc.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
